@@ -12,9 +12,76 @@
       rel="stylesheet"
       type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Custom Classes -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              color1: "#030712",
+              color2: "#030712B3",
+              color3: "#1DD100",
+              color4: "#FFBF0F",
+              color5: "#F78C9C",
+              color6: "#03071299",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
-    <header></header>
+  <body class="max-w-screen-xl mx-auto">
+    <header>
+      <!-- Navbar -->
+      <div class="navbar">
+        <div class="navbar-start flex-row-reverse md:flex-row">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 raleway text-lg font-medium text-color2">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a
+            class="cursor-pointer text-xl md:text-4xl font-extrabold text-color1"
+            >Book-Ticket</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul
+            class="menu menu-horizontal px-1 raleway text-lg font-medium text-color2">
+            <li><a class=" ">Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button
+            class="bg-[#1DD1001A] px-6 md:px-8 py-2 md:py-4 border-2 border-[#1DD10066] flex flex-row gap-3 rounded-lg raleway text-xl font-bold text-color3">
+            <span> Bus</span> <img src="./images/bus-icon.png" alt="" />
+          </button>
+        </div>
+      </div>
+    </header>
     <main></main>
     <footer></footer>
     <!-- External JS -->
