@@ -76,10 +76,11 @@
           </ul>
         </div>
         <div class="navbar-end">
-          <button
+          <a
+            href="#booking-section"
             class="bg-[#1DD1001A] px-6 md:px-8 py-2 md:py-4 border-2 border-[#1DD10066] flex flex-row gap-3 rounded-lg raleway text-xl font-bold text-color3">
             <span> Bus</span> <img src="./images/bus-icon.png" alt="" />
-          </button>
+          </a>
         </div>
       </div>
       <!-- Banner Section -->
@@ -101,10 +102,12 @@
                 the app. The <span class="block"></span> integrated testing
                 features allow for a streamlined .
               </p>
-              <button
-                class="border-0 bg-color3 text-xl px-7 py-5 text-color1 font-bold rounded-xl">
-                Buy Tickets
-              </button>
+              <a href="#booking-section">
+                <button
+                  class="border-0 bg-color3 text-xl px-7 py-5 text-color1 font-bold rounded-xl">
+                  Buy Tickets
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -138,7 +141,7 @@
         </div>
       </section>
     </header>
-    <main class="my-28">
+    <main class="mt-28">
       <!-- Offer Section -->
       <section class="max-w-screen-xl mx-auto">
         <h2 class="text-center text-color1 text-4xl font-bold raleway mb-12">
@@ -203,6 +206,7 @@
       </section>
       <!-- Booking Section -->
       <section
+        id="booking-section"
         class="max-w-screen-2xl mx-auto bg-[#F7F8F8] border-2 border-color3 my-28 rounded-t-[88px] py-28">
         <div class="max-w-screen-xl mx-auto">
           <h3 class="text-center raleway text-4xl font-bold mb-6">
@@ -298,20 +302,32 @@
                 <div
                   class="flex justify-between items-center gap-6 my-1 w-full text-lg font-medium text-[#03071280]">
                   <kbd class="">A</kbd>
-                  <div class="flex flex-1 justify-between">
+                  <div id="a-seat" class="flex flex-1 justify-between">
                     <div class="flex justify-between gap-8">
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="A1"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >A1</kbd
                       >
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="A2"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >A2</kbd
                       >
                     </div>
                     <div class="flex justify-between gap-8">
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="A3"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >A3</kbd
                       >
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="A4"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >A4</kbd
                       >
                     </div>
@@ -321,20 +337,32 @@
                 <div
                   class="flex justify-between items-center gap-6 my-1 w-full text-lg font-medium text-[#03071280]">
                   <kbd class="">B</kbd>
-                  <div class="flex flex-1 justify-between">
+                  <div id="b-seat" class="flex flex-1 justify-between">
                     <div class="flex justify-between gap-8">
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="B1"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >B1</kbd
                       >
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="B2"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >B2</kbd
                       >
                     </div>
                     <div class="flex justify-between gap-8">
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="B3"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >B3</kbd
                       >
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="B4"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >B4</kbd
                       >
                     </div>
@@ -346,18 +374,30 @@
                   <kbd class="">C</kbd>
                   <div class="flex flex-1 justify-between">
                     <div class="flex justify-between gap-8">
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="C1"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >C1</kbd
                       >
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="C2"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >C2</kbd
                       >
                     </div>
                     <div class="flex justify-between gap-8">
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="C3"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >C3</kbd
                       >
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="C4"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >C4</kbd
                       >
                     </div>
@@ -369,18 +409,30 @@
                   <kbd class="">D</kbd>
                   <div class="flex flex-1 justify-between">
                     <div class="flex justify-between gap-8">
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="D1"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >D1</kbd
                       >
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="D2"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >D2</kbd
                       >
                     </div>
                     <div class="flex justify-between gap-8">
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="D3"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >D3</kbd
                       >
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="D4"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >D4</kbd
                       >
                     </div>
@@ -392,18 +444,30 @@
                   <kbd class="">E</kbd>
                   <div class="flex flex-1 justify-between">
                     <div class="flex justify-between gap-8">
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="E1"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >E1</kbd
                       >
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="E2"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >E2</kbd
                       >
                     </div>
                     <div class="flex justify-between gap-8">
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="E3"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >E3</kbd
                       >
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="E4"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >E4</kbd
                       >
                     </div>
@@ -415,18 +479,30 @@
                   <kbd class="">F</kbd>
                   <div class="flex flex-1 justify-between">
                     <div class="flex justify-between gap-8">
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="F1"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >F1</kbd
                       >
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="F2"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >F2</kbd
                       >
                     </div>
                     <div class="flex justify-between gap-8">
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="F3"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >F3</kbd
                       >
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="F4"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >F4</kbd
                       >
                     </div>
@@ -438,18 +514,30 @@
                   <kbd class="">G</kbd>
                   <div class="flex flex-1 justify-between">
                     <div class="flex justify-between gap-8">
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="G1"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >G1</kbd
                       >
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="G2"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >G2</kbd
                       >
                     </div>
                     <div class="flex justify-between gap-8">
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="G3"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >G3</kbd
                       >
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="G4"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >G4</kbd
                       >
                     </div>
@@ -461,18 +549,30 @@
                   <kbd class="">H</kbd>
                   <div class="flex flex-1 justify-between">
                     <div class="flex justify-between gap-8">
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="H1"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >H1</kbd
                       >
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="H2"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >H2</kbd
                       >
                     </div>
                     <div class="flex justify-between gap-8">
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="H3"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >H3</kbd
                       >
-                      <kbd class="kbd border-0 px-11 py-4 cursor-pointer"
+                      <kbd
+                        onclick="seatId(event)"
+                        id="H4"
+                        class="kbd border-0 px-11 py-4 cursor-pointer"
                         >H4</kbd
                       >
                     </div>
@@ -501,12 +601,12 @@
                   <p>Price</p>
                 </div>
                 <div class="border border-dashed border-[#03071233]"></div>
-                <div></div>
+                <div id="show-seat" class="space-x-6"></div>
                 <div class="border border-[#03071233]"></div>
                 <div
                   class="text-base text-color1 font-medium flex justify-between items-center">
                   <p>Total Price</p>
-                  <p>BDT <span>0</span></p>
+                  <p>BDT <span id="total-price">0</span></p>
                 </div>
                 <div class="relative">
                   <input
@@ -516,18 +616,20 @@
                     id=""
                     class="text-sm py-5 rounded-xl w-full pl-5 focus:outline-none" />
                   <input
+                    id="apply-btn"
                     type="submit"
-                    class="text-base font-semibold bg-color3 text-white px-4 py-3 rounded-lg absolute right-2 top-[6px] cursor-pointer"
-                    value="Apply" />
+                    class="btn hover:bg-color3 text-base font-semibold bg-color3 text-white px-4 rounded-lg absolute right-2 top-[6px]"
+                    value="Apply"
+                    disabled />
                 </div>
                 <div
                   class="text-base text-color1 font-medium flex justify-between items-center">
                   <p>Grand Total</p>
-                  <p>BDT <span>0</span></p>
+                  <p>BDT <span id="grand-price">0</span></p>
                 </div>
               </div>
               <div>
-                <form action="" class="my-6 space-y-6">
+                <form class="my-6 space-y-6">
                   <label class="form-control w-full">
                     <div class="label">
                       <span
@@ -560,14 +662,16 @@
                       >
                     </div>
                     <input
-                      type="text"
+                      type="email"
                       placeholder="Enter your email id"
                       class="input input-bordered w-full py-6" />
                   </label>
                   <input
                     type="submit"
                     value="Next"
-                    class="raleway font-extrabold text-xl text-white bg-color3 rounded-2xl w-full py-5 cursor-pointer" />
+                    class="btn raleway font-extrabold text-xl text-white bg-color3 rounded-2xl w-full hover:bg-color3 h-16"
+                    id="next-btn"
+                    disabled />
                 </form>
                 <div class="text-base text-color6 flex justify-around mt-6">
                   <p class="underline">Terms and Conditions</p>
@@ -581,6 +685,7 @@
     </main>
     <footer></footer>
     <!-- External JS -->
+    <script src="./js/utility.js"></script>
     <script src="./js/function.js"></script>
   </body>
 </html>
