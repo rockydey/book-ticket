@@ -55,7 +55,6 @@ function getCode() {
 
 function formValidation() {
   const phoneNumber = document.getElementById("input-number").value;
-  console.log(phoneNumber);
   if (bookedSeats.length > 0 && phoneNumber) {
     document.getElementById("next-btn").removeAttribute("disabled");
   }
