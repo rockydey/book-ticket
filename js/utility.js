@@ -2,10 +2,13 @@ function selectSeat(elementId) {
   document.getElementById(elementId).style.backgroundColor = "#1DD100";
   document.getElementById(elementId).style.color = "white";
 }
+function unSelectSeat(elementId) {
+  document.getElementById(elementId).style.backgroundColor = "#F2F2F2";
+  document.getElementById(elementId).style.color = "#03071280";
+}
 
 function discount(elementId) {
   const inputField = document.getElementById("input-field");
-  console.log(inputField);
   const totalPrice = document.getElementById("total-price").innerText;
   const span = document.createElement("span");
   if (elementId === "NEW15") {

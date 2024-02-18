@@ -1,13 +1,13 @@
 const bookedSeats = [];
 function seatId(event) {
-  if (bookedSeats.length < 4) {
-    bookedSeats.push(event.target);
+  if (bookedSeats.length < 4 && !bookedSeats.includes(event.target.id)) {
+    bookedSeats.push(event.target.id);
     console.log(bookedSeats);
     selectSeat(event.target.id);
     const showSeat = document.getElementById("show-seat");
     const span = document.createElement("span");
     span.innerHTML = `
-    <div class="text-base text-color6 font-medium flex justify-between items-center">
+    <div id=${event.target.id} class="text-base text-color6 font-medium flex justify-between items-center">
       <p>
       ${event.target.id}
       </p>
@@ -29,6 +29,9 @@ function seatId(event) {
 
     // Coupon validation
     document.getElementById("apply-btn").addEventListener("click", getCode);
+  } else if (bookedSeats.includes(event.target.id)) {
+    // bookedSeats.pop(event.target.id);
+    // unSelectSeat(event.target.id);
   } else {
     alert("maximum 4 seats only");
   }
