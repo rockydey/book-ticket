@@ -207,7 +207,7 @@
       <!-- Booking Section -->
       <section
         id="booking-section"
-        class="max-w-screen-2xl mx-auto bg-[#F7F8F8] border-2 border-color3 mt-28 rounded-t-[88px] py-28">
+        class="max-w-screen-2xl mx-auto bg-[#F7F8F8] border-2 border-color3 mt-28 rounded-t-[88px] py-28 hidden">
         <div class="max-w-screen-xl mx-auto">
           <h3 class="text-center raleway text-4xl font-bold mb-6">
             Sohoz Paribahan
@@ -788,13 +788,14 @@
     </main>
     <footer class="bg-color1 py-28">
       <section class="max-w-screen-xl mx-auto">
-        <div class="flex justify-between">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between space-y-6">
           <div class="space-y-6">
             <a
-              class="cursor-pointer text-xl md:text-4xl font-extrabold text-white"
+              class="cursor-pointer text-xl md:text-4xl font-extrabold text-white block text-center md:text-left"
               >Book-Ticket</a
             >
-            <p class="text-[#FFFFFFCC] text-lg">
+            <p class="text-[#FFFFFFCC] text-lg text-center md:text-left">
               P-Ticket is a digital platform to make your <br />
               daily commuting better.
             </p>
@@ -811,11 +812,12 @@
           </div>
         </div>
         <div class="border border-dashed border-[#FFFFFFCC] my-6"></div>
-        <div class="flex justify-between">
-          <p class="text-[#FFFFFFB3] text-base">
+        <div class="flex flex-col md:flex-row justify-between space-y-6 md:space-y-0">
+          <p class="text-[#FFFFFFB3] text-base text-center md:text-right">
             &copy;2024 all rights reserved, Book-Ticket services limited.
           </p>
-          <div class="text-white text-base font-medium flex justify-between gap-10">
+          <div
+            class="text-white text-base font-medium flex flex-col md:flex-row items-center justify-between gap-10">
             <p>Terms & condition</p>
             <p>Return & refund policy</p>
             <p>Privacy policy</p>
