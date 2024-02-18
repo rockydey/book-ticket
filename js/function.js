@@ -25,10 +25,10 @@ function seatId(event) {
     document.getElementById("available-seat").innerText =
       40 - bookedSeats.length;
     document.getElementById("seat-booked").innerText = bookedSeats.length;
+    document.getElementById("grand-total").innerText = bookedSeats.length * 550;
 
     // Coupon validation
     document.getElementById("apply-btn").addEventListener("click", getCode);
-
     // next button enable
     document
       .getElementById("input-number")
