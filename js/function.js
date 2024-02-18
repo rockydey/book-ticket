@@ -32,7 +32,7 @@ function seatId(event) {
     // next button enable
     document
       .getElementById("input-number")
-      .addEventListener("blur", formValidation);
+      .addEventListener("keyup", formValidation);
   } else if (bookedSeats.includes(event.target.id)) {
     // bookedSeats.pop(event.target.id);
     // unSelectSeat(event.target.id);
@@ -55,7 +55,7 @@ function getCode() {
 
 function formValidation() {
   const phoneNumber = document.getElementById("input-number").value;
-  if (bookedSeats.length > 0 && phoneNumber) {
+  if (bookedSeats.length > 0 && phoneNumber.length === 11) {
     document.getElementById("next-btn").removeAttribute("disabled");
   }
 }

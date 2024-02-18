@@ -746,7 +746,7 @@
                       class="input input-bordered w-full py-6" />
                   </label>
                   <input
-                    onclick="my_modal_3.showModal()"
+                    onclick="my_modal_5.showModal()"
                     id="next-btn"
                     type="submit"
                     value="Next"
@@ -764,15 +764,8 @@
         </div>
       </section>
       <!-- Modal -->
-      <dialog id="my_modal_3" class="modal">
-        <div class="modal-box h-96">
-          <form method="dialog">
-            <button
-              onclick="location.reload()"
-              class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
-              ✕
-            </button>
-          </form>
+      <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box h-[480px] my-auto">
           <div class="flex flex-col justify-center items-center">
             <img src="./images/success.png" alt="" />
             <h3 class="uppercase text-2xl font-bold text-color3 my-6">
@@ -785,6 +778,15 @@
             <p class="text-xl text-color6 font-normal text-center mt-6">
               Shortly you will find a confirmation in your email.
             </p>
+          </div>
+          <div class="modal-action justify-center">
+            <form method="dialog">
+              <button
+                onclick="location.reload()"
+                class="btn bg-color3 font-semibold text-xl text-white hover:bg-color3 px-20 rounded-full">
+                Continue
+              </button>
+            </form>
           </div>
         </div>
       </dialog>
