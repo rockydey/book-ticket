@@ -702,7 +702,7 @@
                 </div>
               </div>
               <div>
-                <form class="my-6 space-y-6">
+                <div class="my-6 space-y-6">
                   <label class="form-control w-full">
                     <div class="label">
                       <span
@@ -713,7 +713,8 @@
                     <input
                       type="text"
                       placeholder="Enter your name"
-                      class="input input-bordered w-full py-6" />
+                      class="input input-bordered w-full py-6"
+                      required />
                   </label>
                   <label class="form-control w-full">
                     <div class="label">
@@ -723,9 +724,11 @@
                       >
                     </div>
                     <input
+                      id="input-number"
                       type="number"
                       placeholder="Enter your phone number"
-                      class="input input-bordered w-full py-6" />
+                      class="input input-bordered w-full py-6"
+                      required />
                   </label>
                   <label class="form-control w-full">
                     <div class="label">
@@ -740,12 +743,14 @@
                       class="input input-bordered w-full py-6" />
                   </label>
                   <input
+                    onclick="my_modal_3.showModal()"
+                    id="next-btn"
                     type="submit"
                     value="Next"
                     class="btn raleway font-extrabold text-xl text-white bg-color3 rounded-2xl w-full hover:bg-color3 h-16"
                     id="next-btn"
                     disabled />
-                </form>
+                </div>
                 <div class="text-base text-color6 flex justify-around mt-6">
                   <p class="underline">Terms and Conditions</p>
                   <p class="underline">Cancellation Policy</p>
@@ -755,6 +760,31 @@
           </div>
         </div>
       </section>
+      <!-- Modal -->
+      <dialog id="my_modal_3" class="modal">
+        <div class="modal-box h-96">
+          <form method="dialog">
+            <button
+              onclick="location.reload()"
+              class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+              ✕
+            </button>
+          </form>
+          <div class="flex flex-col justify-center items-center">
+            <img src="./images/success.png" alt="" />
+            <h3 class="uppercase text-2xl font-bold text-color3 my-6">
+              Success
+            </h3>
+            <p class="text-xl text-color1 font-medium text-center">
+              Thank you for Booking Our Bus Seats. We are working hard to find
+              the best service and deals for you.
+            </p>
+            <p class="text-xl text-color6 font-normal text-center mt-6">
+              Shortly you will find a confirmation in your email.
+            </p>
+          </div>
+        </div>
+      </dialog>
     </main>
     <footer></footer>
     <!-- External JS -->
